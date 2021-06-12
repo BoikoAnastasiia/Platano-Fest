@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import Container from './Components/Container';
+import { Component, Suspense, lazy } from 'react';
+import AppBar from './Components/AppBar/AppBar';
+import PrivateRoute from './Components/Routes/PrivateRoute';
+import PublicRoute from './Components/Routes/PublicRoute';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const HomeView = lazy(() => import('./views/HomeView'));
+const RegisterView = lazy(() => import('./views/RegisterView'));
+const LoginView = lazy(() => import('./views/LoginView'));
+const ContactsView = lazy(() => import('./views/ContactsView'));
+
+class App extends Component {
+  componentDidMount() {
+    this.props.onGetCurrentUser();
+  }
+
+  render() {
+    return (
+      <Container>
+        <AppBar />
+        <Suspense fallback={<ClipLoader />}>
+          <Switch>
+            <PublicRoute exact path="/" component={HomeView} />
+            <PublicRoute
+              path="/register"
+              component={RegisterView}
+              restricted
+              redirectTo="/contacts"
+            />
+            <PublicRoute
+              path="/login"
+              restricted
+              component={LoginView}
+              redirectTo="/contacts"
+            />
+            <PrivateRoute
+              path="/contacts"
+              component={ContactsView}
+              redirectTo="/login"
+            />
+          </Switch>
+        </Suspense>
+      </Container>
+    );
+  }
 }
 
-export default App;
+const mapDispatchToProps = {
+  onGetCurrentUser: authOperations.getCurrentUser,
+};
+
+export default connect(null, mapDispatchToProps)(App);
