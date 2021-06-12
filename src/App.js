@@ -1,52 +1,32 @@
-import Container from './Components/Container';
-import { Component, Suspense, lazy } from 'react';
+import { Switch, Route } from 'react-router-dom';
 import AppBar from './Components/AppBar/AppBar';
-import PrivateRoute from './Components/Routes/PrivateRoute';
-import PublicRoute from './Components/Routes/PublicRoute';
 
-const HomeView = lazy(() => import('./views/HomeView'));
-const RegisterView = lazy(() => import('./views/RegisterView'));
-const LoginView = lazy(() => import('./views/LoginView'));
-const ContactsView = lazy(() => import('./views/ContactsView'));
+export default function App() {
+  return (
+    <div>
+      <Switch>
+        <Route path="/home">
+          <Home />
+        </Route>
 
-class App extends Component {
-  componentDidMount() {
-    this.props.onGetCurrentUser();
-  }
-
-  render() {
-    return (
-      <Container>
         <AppBar />
-        <Suspense fallback={<ClipLoader />}>
-          <Switch>
-            <PublicRoute exact path="/" component={HomeView} />
-            <PublicRoute
-              path="/register"
-              component={RegisterView}
-              restricted
-              redirectTo="/contacts"
-            />
-            <PublicRoute
-              path="/login"
-              restricted
-              component={LoginView}
-              redirectTo="/contacts"
-            />
-            <PrivateRoute
-              path="/contacts"
-              component={ContactsView}
-              redirectTo="/login"
-            />
-          </Switch>
-        </Suspense>
-      </Container>
-    );
-  }
+
+        <Route path="/artists">
+          <Artists />
+        </Route>
+
+        <Route path="/information">
+          <Information />
+        </Route>
+
+        <Route path="/map">
+          <Map />
+        </Route>
+
+        <Route path="/contacts">
+          <Contacts />
+        </Route>
+      </Switch>
+    </div>
+  );
 }
-
-const mapDispatchToProps = {
-  onGetCurrentUser: authOperations.getCurrentUser,
-};
-
-export default connect(null, mapDispatchToProps)(App);
