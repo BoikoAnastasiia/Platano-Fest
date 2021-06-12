@@ -1,12 +1,17 @@
 import { Switch, Route } from 'react-router-dom';
-import AppBar from './Components/AppBar/AppBar';
+import AppBar from './Components/AppBar';
+import Artists from './Views/Artists';
+import HomePage from './Views/homepage';
+import Map from './Views/Map';
+import Information from './Views/Information';
+import Contacts from './Views/Contacts';
 
 export default function App() {
   return (
     <div>
       <Switch>
         <Route path="/home">
-          <Home />
+          <HomePage />
         </Route>
 
         <AppBar />
