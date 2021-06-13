@@ -1,5 +1,24 @@
 .homepage-wraper {
-  background: center / cover no-repeat url('./images/bg.svg'), #008c4c;
+  background: center / cover no-repeat url('./images/bg.webp'), #008c4c;
   width: 100vw;
   height: 100vh;
+}
+
+.icon-social {
+  fill: rgb(255, 255, 255);
+  transition: 500ms;
+
+  &:hover {
+    fill: #ffc64f;
+  }
+}
+
+.nav-wrapper {
+  display: flex;
+  margin: auto;
+  max-width: 945px;
+}
+
+.icons-wrapper {
+  margin-left: auto;
 }

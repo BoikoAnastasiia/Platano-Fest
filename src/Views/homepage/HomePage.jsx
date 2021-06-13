@@ -1,6 +1,8 @@
 import MainContainer from '../../Сomponents/MainContainer';
 import './HomePage.scss';
 import Vk from '../../Icons/Vk';
+import Ig from '../../Icons/Ig';
+import Tg from '../../Icons/Tg';
 
 export default function HomePage() {
   return (
@@ -12,16 +14,42 @@ export default function HomePage() {
               viewBox="0 0 100 80"
               width="17"
               height="25"
-              className="menu-icon"
+              className="icon-social"
             >
               <rect width="100" height="20"></rect>
               <rect y="30" width="100" height="20"></rect>
               <rect y="60" width="100" height="20"></rect>
             </svg>
 
-            <div className="icons-wrapper">
-              <Vk />
-            </div>
+            <ul className="icons-wrapper">
+              <li className="nav-item">
+                <a
+                  href="https://vk.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <Vk />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <Ig />
+                </a>
+              </li>
+              <li className="nav-item">
+                <a
+                  href="https://telegram.org/"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                >
+                  <Tg />
+                </a>
+              </li>
+            </ul>
           </div>
         </nav>
       </MainContainer>
