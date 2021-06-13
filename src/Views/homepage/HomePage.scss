@@ -1,0 +1,13 @@
+.homepage-wraper {
+  background: center / cover no-repeat url('./images/bg.svg'), #008c4c;
+  width: 100vw;
+  height: 100vh;
+}
+
+.icon-social {
+  fill: white;
+
+  &:hover {
+    fill: #ffc64f;
+  }
+}
