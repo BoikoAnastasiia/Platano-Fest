@@ -1,5 +1,5 @@
 import { Switch, Route } from 'react-router-dom';
-import AppBar from './Components/AppBar';
+import AppBar from './Сomponents/AppBar';
 import Artists from './Views/Artists';
 import HomePage from './Views/homepage';
 import Map from './Views/Map';
@@ -9,7 +9,7 @@ import Contacts from './Views/Contacts';
 export default function App() {
   return (
     <div>
-      <Switch>
+      {/* <Switch>
         <Route path="/home">
           <HomePage />
         </Route>
@@ -20,9 +20,9 @@ export default function App() {
           <Artists />
         </Route>
 
-        <Route path="/information">
-          <Information />
-        </Route>
+        <Route path="/information"> */}
+      <Information />
+      {/* </Route>
 
         <Route path="/map">
           <Map />
@@ -31,7 +31,7 @@ export default function App() {
         <Route path="/contacts">
           <Contacts />
         </Route>
-      </Switch>
+      </Switch> */}
     </div>
   );
 }
