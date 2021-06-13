@@ -21,4 +21,14 @@
 
 .icons-wrapper {
   margin-left: auto;
+  display: flex;
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 5px;
+}
+
+.hero-wrapper {
+  margin: 230px auto 0 auto;
+  width: 500px;
 }

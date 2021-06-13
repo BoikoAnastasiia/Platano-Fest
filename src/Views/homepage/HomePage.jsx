@@ -3,6 +3,7 @@ import './HomePage.scss';
 import Vk from '../../Icons/Vk';
 import Ig from '../../Icons/Ig';
 import Tg from '../../Icons/Tg';
+import Logo from '../../Icons/Logo';
 
 export default function HomePage() {
   return (
@@ -52,6 +53,11 @@ export default function HomePage() {
             </ul>
           </div>
         </nav>
+        <main>
+          <div className="hero-wrapper">
+            <Logo />
+          </div>
+        </main>
       </MainContainer>
     </div>
   );
