@@ -1,37 +1,26 @@
-import { Switch, Route } from 'react-router-dom';
-import AppBar from './Сomponents/AppBar';
-import Artists from './Views/Artists';
-import HomePage from './Views/homepage';
-import Map from './Views/Map';
-import Information from './Views/Information';
-import Contacts from './Views/Contacts';
+import { Switch, Route, Redirect } from 'react-router-dom';
+import Artists from './Views/Artists/';
+import HomePage from './Views/HomePage';
+import Map from './Views/Map/';
+import Information from './Views/Information/';
+import Contacts from './Views/Contacts/';
 
 export default function App() {
   return (
     <div>
-      {/* <Switch>
-        <Route path="/home">
-          <HomePage />
-        </Route>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
 
-        <AppBar />
+        <Route path="/artists" component={Artists} />
 
-        <Route path="/artists">
-          <Artists />
-        </Route>
+        <Route path="/information" component={Information} />
 
-        <Route path="/information"> */}
-      <Information />
-      {/* </Route>
+        <Route path="/map" component={Map} />
 
-        <Route path="/map">
-          <Map />
-        </Route>
+        <Route path="/contacts" component={Contacts} />
 
-        <Route path="/contacts">
-          <Contacts />
-        </Route>
-      </Switch> */}
+        <Redirect to="/" />
+      </Switch>
     </div>
   );
 }
