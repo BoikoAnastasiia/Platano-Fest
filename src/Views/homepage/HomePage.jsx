@@ -1,10 +1,8 @@
 import MainContainer from '../../Сomponents/MainContainer';
 import './HomePage.scss';
-import ReactSprite from 'react-sprite';
+import Vk from '../../Icons/Vk';
 
 export default function HomePage() {
-  const SimpleIcon = () => <ReactSprite href={`icomoon.svg#${'VK'}`} />;
-
   return (
     <div className="homepage-wraper">
       <MainContainer>
@@ -21,7 +19,9 @@ export default function HomePage() {
               <rect y="60" width="100" height="20"></rect>
             </svg>
 
-            <div className="icons-wrapper"></div>
+            <div className="icons-wrapper">
+              <Vk />
+            </div>
           </div>
         </nav>
       </MainContainer>
