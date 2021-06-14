@@ -21,17 +21,19 @@ export default function HomePage() {
       <MainContainer>
         <nav>
           <div className="nav-wrapper">
-            <svg
-              onClick={toggleModal}
-              viewBox="0 0 100 80"
-              width="17"
-              height="25"
-              className="icon-social menu-btn"
-            >
-              <rect width="100" height="20"></rect>
-              <rect y="30" width="100" height="20"></rect>
-              <rect y="60" width="100" height="20"></rect>
-            </svg>
+            {!showSidebar && (
+              <svg
+                onClick={toggleModal}
+                viewBox="0 0 100 80"
+                width="17"
+                height="25"
+                className="icon-social menu-btn"
+              >
+                <rect width="100" height="20"></rect>
+                <rect y="30" width="100" height="20"></rect>
+                <rect y="60" width="100" height="20"></rect>
+              </svg>
+            )}
 
             <ul className="icons-wrapper">
               <li className="nav-item">

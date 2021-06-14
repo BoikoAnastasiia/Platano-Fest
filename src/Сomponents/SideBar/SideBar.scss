@@ -4,10 +4,27 @@
   left: 0;
   height: 100vh;
   background-color: black;
-  width: 20vw;
+  width: 25vw;
   transition: 800ms;
+  padding: 20px 50px 40px 50px;
 }
 
 .menu-btn {
   z-index: 200;
+}
+
+.logo-sidebar {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+.close-btn {
+  fill: white;
+  transition: 500ms;
+  cursor: pointer;
+  margin-left: auto;
+
+  &:hover {
+    fill: #ffc64f;
+  }
 }
