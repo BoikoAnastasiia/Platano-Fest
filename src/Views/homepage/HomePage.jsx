@@ -60,6 +60,10 @@ export default function HomePage() {
             <div className="music-wrapper">
               <MusicNearTheSea className="MusicNearTheSea" />
             </div>
+            <div className="date-wrapper">
+              <p className="date-number">2-3</p>
+              <p className="date-month">июля</p>
+            </div>
           </div>
         </main>
       </MainContainer>
