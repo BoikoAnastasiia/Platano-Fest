@@ -4,6 +4,7 @@ import Vk from '../../Icons/Vk';
 import Ig from '../../Icons/Ig';
 import Tg from '../../Icons/Tg';
 import Logo from '../../Icons/Logo';
+import MusicNearTheSea from '../../Icons/MusicNeartheSea';
 
 export default function HomePage() {
   return (
@@ -56,6 +57,9 @@ export default function HomePage() {
         <main>
           <div className="hero-wrapper">
             <Logo />
+            <div className="music-wrapper">
+              <MusicNearTheSea className="MusicNearTheSea" />
+            </div>
           </div>
         </main>
       </MainContainer>

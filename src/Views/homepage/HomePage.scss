@@ -29,6 +29,23 @@
 }
 
 .hero-wrapper {
+  position: relative;
   margin: 230px auto 0 auto;
   width: 500px;
+}
+
+.music-wrapper {
+  position: absolute;
+  top: -87px;
+  left: -140px;
+  background: #ffc64f;
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+}
+
+.MusicNearTheSea {
+  position: absolute;
+  left: 19px;
+  top: 32px;
 }
