@@ -1,5 +1,6 @@
 .homepage-wraper {
-  background: center / cover no-repeat url('./images/bg.webp'), #008c4c;
+  background: url('./images/bg.webp'), #008c4c;
+  background-size: cover;
   width: 100vw;
   height: 100vh;
 }
@@ -81,4 +82,21 @@
   -webkit-transform: scale(1.5, 1);
   margin: 0;
   font-size: 0.8rem;
+}
+
+.test {
+  border: 1px solid rgb(255, 255, 255);
+  padding: 16px 50px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 130px auto 0 auto;
+  border-radius: 10px;
+  width: 305px;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 1.3em;
+  transition: 700ms;
+  &:hover {
+    background-color: #ffffff52;
+  }
 }

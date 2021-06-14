@@ -1,0 +1,13 @@
+.sidebarWrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: black;
+  width: 20vw;
+  transition: 800ms;
+}
+
+.menu-btn {
+  z-index: 200;
+}

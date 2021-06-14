@@ -4,6 +4,7 @@ import HomePage from './Views/HomePage';
 import Map from './Views/Map/';
 import Information from './Views/Information/';
 import Contacts from './Views/Contacts/';
+import BuyTickets from './Views/BuyTickets';
 
 export default function App() {
   return (
@@ -14,6 +15,8 @@ export default function App() {
         <Route path="/artists" component={Artists} />
 
         <Route path="/information" component={Information} />
+
+        <Route path="/buy-tickets" component={BuyTickets} />
 
         <Route path="/map" component={Map} />
 
