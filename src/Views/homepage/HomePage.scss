@@ -1,5 +1,5 @@
 .homepage-wraper {
-  background: center / cover no-repeat url('./images/bg.jpg'), #008c4c;
+  background: center / cover no-repeat url('./images/bg.webp'), #008c4c;
   width: 100vw;
   height: 100vh;
 }
@@ -58,4 +58,27 @@
   width: 136px;
   height: 136px;
   border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: 900;
+  color: #008c4c;
+  text-transform: uppercase;
+  transform: rotate(11deg);
+}
+
+.date-number {
+  transform: scale(1.5, 1);
+  -webkit-transform: scale(1.5, 1);
+  font-size: 3rem;
+  margin: 0;
+}
+
+.date-month {
+  transform: scale(1.5, 1);
+  -webkit-transform: scale(1.5, 1);
+  margin: 0;
+  font-size: 0.8rem;
 }
