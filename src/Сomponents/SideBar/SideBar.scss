@@ -7,6 +7,9 @@
   width: 25vw;
   transition: 800ms;
   padding: 20px 50px 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-btn {
@@ -22,9 +25,37 @@
   fill: white;
   transition: 500ms;
   cursor: pointer;
-  margin-left: auto;
+  position: absolute;
+  top: 19px;
+  right: 19px;
 
   &:hover {
     fill: #ffc64f;
   }
+}
+
+.NavLink {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  transition: 500ms;
+}
+
+.NavLink:hover {
+  color: #ffc64f;
+}
+
+.router-list:not(:last-child) {
+  margin-bottom: 19px;
+}
+
+.nav-links {
+  margin-top: 42px;
+}
+
+.bottom-text {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  margin: 0;
 }
