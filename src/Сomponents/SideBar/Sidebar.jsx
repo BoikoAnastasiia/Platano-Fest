@@ -1,6 +1,6 @@
 import './SideBar.scss';
 import { useEffect } from 'react';
-import { Route, NavLink, Switch, Redirect } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import Logo from '../../Views/HomePage/images/sideBarLogo.svg';
 import Close from '../../Views/HomePage/images/close.svg';

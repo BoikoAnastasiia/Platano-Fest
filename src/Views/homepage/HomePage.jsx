@@ -9,6 +9,8 @@ import Tg from '../../Icons/Tg';
 import Logo from '../../Icons/Logo';
 import MusicNearTheSea from '../../Icons/MusicNeartheSea';
 import SideBar from '../../Сomponents/SideBar';
+import moduleName from '../../Icons/SmallLogo';
+console.log(moduleName);
 
 export default function HomePage() {
   const [showSidebar, setShowSideBar] = useState(false);

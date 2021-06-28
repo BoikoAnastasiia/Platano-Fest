@@ -41,6 +41,11 @@
   transition: 500ms;
 }
 
+.NavLink--active {
+  color: #ffc64f;
+  text-decoration: underline;
+}
+
 .NavLink:hover {
   color: #ffc64f;
 }
