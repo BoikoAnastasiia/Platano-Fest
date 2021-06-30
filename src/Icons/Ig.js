@@ -2,8 +2,16 @@ import * as React from 'react';
 import './Icons.scss';
 
 function SvgIg(props) {
+  function changeFillonHover(e) {
+    e.target.style.fill = props.hover;
+  }
+  function changeFillonLeave(e) {
+    e.target.style.fill = props.fill;
+  }
   return (
     <svg
+      onMouseOver={changeFillonHover}
+      onMouseLeave={changeFillonLeave}
       width={26}
       height={25}
       xmlns="http://www.w3.org/2000/svg"
