@@ -12,12 +12,14 @@ import shishka from './images/shishka.jpg';
 import ukachalo from './images/ukachalo.jpg';
 import asomnia from './images/asomnia.jpg';
 import misha from './images/misha.jpg';
-
+import SideBar from '../../Сomponents/SideBar';
 import Social from '../../Сomponents/Social';
 
 export default function Artists() {
+  const width = window.innerWidth;
+
   return (
-    <div style={{ backgroundColor: '#ffc64f', height: '100vw' }}>
+    <div style={{ backgroundColor: '#ffc64f' }}>
       <AppBar />
       <MainContainer>
         <Header text="хэдлайнеры" />

@@ -5,7 +5,7 @@ import './AppBar.scss';
 
 export default function AppBar() {
   return (
-    <div>
+    <div className="anchor">
       <nav className="nav">
         <ul className="nav-list">
           <li>

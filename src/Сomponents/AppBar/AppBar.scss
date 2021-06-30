@@ -6,6 +6,12 @@
   font-size: 10px;
 }
 
+.anchor {
+  @media screen and (max-width: 900px) {
+    display: none;
+  }
+}
+
 .NavLink--active {
   color: #ffc64f;
   text-decoration: underline;

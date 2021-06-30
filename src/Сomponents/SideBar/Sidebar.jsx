@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 import Logo from '../../Views/HomePage/images/sideBarLogo.svg';
 import Close from '../../Views/HomePage/images/close.svg';
+
 export default function Sidebar({ onClose }) {
   useEffect(() => {
     const handleKeyDown = e => {
