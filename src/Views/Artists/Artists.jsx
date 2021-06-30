@@ -7,6 +7,12 @@ import manu from './images/manu.jpg';
 import belki from './images/belki.jpg';
 import plushmoon from './images/plushmoon.jpg';
 
+import onelove from './images/onelove.jpg';
+import shishka from './images/shishka.jpg';
+import ukachalo from './images/ukachalo.jpg';
+import asomnia from './images/asomnia.jpg';
+import misha from './images/misha.jpg';
+
 export default function Artists() {
   return (
     <div style={{ backgroundColor: '#ffc64f', height: '100vw' }}>
@@ -52,6 +58,72 @@ export default function Artists() {
               />
               <h3 className="artistName">plush moon</h3>
             </div>
+          </li>
+        </ul>
+
+        <h2 className="artists-header">Артисты</h2>
+
+        <ul className="small-cards-wrapper">
+          <li>
+            <div className="card-wrapper">
+              <img
+                src={onelove}
+                alt="onelove"
+                width="150"
+                className="artist-photo-secondary"
+              />
+              <h3 className="artistName">One love</h3>
+            </div>
+          </li>
+          <li>
+            <div className="card-wrapper">
+              <img
+                src={shishka}
+                alt="shishka"
+                width="150"
+                className="artist-photo-secondary"
+              />
+              <h3 className="artistName">Шиshка</h3>
+            </div>
+          </li>
+          <li>
+            <div className="card-wrapper">
+              <img
+                src={ukachalo}
+                alt="ukachalo"
+                width="150"
+                className="artist-photo-secondary"
+              />
+              <h3 className="artistName">укачало</h3>
+            </div>
+          </li>
+          <li>
+            <div className="card-wrapper">
+              <img
+                src={asomnia}
+                alt="asomnia"
+                width="150"
+                className="artist-photo-secondary"
+              />
+              <h3 className="artistName">асомния</h3>
+            </div>
+          </li>
+          <li>
+            <div className="card-wrapper">
+              <img
+                src={misha}
+                alt="misha"
+                width="150"
+                className="artist-photo-secondary"
+              />
+              <h3 className="artistName">миша мищенко</h3>
+            </div>
+          </li>
+          <li>
+            <h4>Список приглашенных артистов постоянно обновляется</h4>
+            <p>
+              Подписывайся на нас в соцсетях, чтобы не попустить обвновления
+            </p>
           </li>
         </ul>
       </MainContainer>

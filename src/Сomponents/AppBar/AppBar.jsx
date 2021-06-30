@@ -6,7 +6,7 @@ import './AppBar.scss';
 export default function AppBar() {
   return (
     <div>
-      <nav>
+      <nav className="nav">
         <ul className="nav-list">
           <li>
             <Link exact to="/">

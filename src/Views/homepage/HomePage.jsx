@@ -3,14 +3,10 @@ import { Link } from 'react-router-dom';
 import React, { useState, useCallback } from 'react';
 
 import './HomePage.scss';
-import Vk from '../../Icons/Vk';
-import Ig from '../../Icons/Ig';
-import Tg from '../../Icons/Tg';
+import Social from '../../Сomponents/Social';
 import Logo from '../../Icons/Logo';
 import MusicNearTheSea from '../../Icons/MusicNeartheSea';
 import SideBar from '../../Сomponents/SideBar';
-import moduleName from '../../Icons/SmallLogo';
-console.log(moduleName);
 
 export default function HomePage() {
   const [showSidebar, setShowSideBar] = useState(false);
@@ -36,36 +32,7 @@ export default function HomePage() {
                 <rect y="60" width="100" height="20"></rect>
               </svg>
             )}
-
-            <ul className="icons-wrapper">
-              <li className="nav-item">
-                <a
-                  href="https://vk.com/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <Vk />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="https://www.instagram.com/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <Ig />
-                </a>
-              </li>
-              <li className="nav-item">
-                <a
-                  href="https://telegram.org/"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                >
-                  <Tg />
-                </a>
-              </li>
-            </ul>
+            <Social className="icons-wrapper" />
           </div>
         </nav>
         <main>
