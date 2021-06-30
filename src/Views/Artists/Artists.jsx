@@ -3,6 +3,9 @@ import MainContainer from '../../Сomponents/MainContainer';
 import Header from '../../Сomponents/Header';
 import './Artists.scss';
 import majicool from './images/majicool.jpg';
+import manu from './images/manu.jpg';
+import belki from './images/belki.jpg';
+import plushmoon from './images/plushmoon.jpg';
 
 export default function Artists() {
   return (
@@ -16,25 +19,38 @@ export default function Artists() {
               <img
                 src={majicool}
                 alt="majicool"
-                width="292"
+                width="260"
                 className="artist-photo"
               />
               <h3 className="artistName">меджикул</h3>
             </div>
           </li>
           <li>
-            <div>
-              <img src="" alt="" />
+            <div className="card-wrapper">
+              <img src={manu} alt="manu" width="260" className="artist-photo" />
+              <h3 className="artistName">коля маню</h3>
             </div>
           </li>
           <li>
-            <div>
-              <img src="" alt="" />
+            <div className="card-wrapper">
+              <img
+                src={belki}
+                alt="belki"
+                width="260"
+                className="artist-photo"
+              />
+              <h3 className="artistName">белки на акации</h3>
             </div>
           </li>
           <li>
-            <div>
-              <img src="" alt="" />
+            <div className="card-wrapper">
+              <img
+                src={plushmoon}
+                alt="plushmoon"
+                width="260"
+                className="artist-photo"
+              />
+              <h3 className="artistName">plush moon</h3>
             </div>
           </li>
         </ul>

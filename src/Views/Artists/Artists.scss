@@ -1,6 +1,8 @@
 .big-cards-wrapper {
-  display: flex;
+  display: grid;
   margin-top: 45px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
 }
 
 .card-wrapper {
@@ -8,6 +10,7 @@
 }
 
 .artistName {
+  white-space: nowrap;
   position: absolute;
   font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 60px;
@@ -19,7 +22,8 @@
 }
 
 .artist-photo {
-  transform: rotate(4deg);
+  width: 100%;
+  transform: rotate(-3deg);
 
   &:hover {
     transform: rotate(0deg);
