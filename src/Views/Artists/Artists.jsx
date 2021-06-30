@@ -122,7 +122,9 @@ export default function Artists() {
             </div>
           </li>
           <li className="artists-info-wrapper">
-            <h4>Список приглашенных артистов постоянно обновляется</h4>
+            <h4 className="list-artist-description">
+              Список приглашенных артистов постоянно обновляется
+            </h4>
             <p>Подписывайся на нас в соцсетях, чтобы не попустить обновления</p>
             <Social fill="#000" hover="white" />
           </li>

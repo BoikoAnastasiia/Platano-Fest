@@ -3,6 +3,15 @@
   margin-top: 45px;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
+
+  @media screen and (max-width: 800px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 400px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .small-cards-wrapper {
@@ -11,8 +20,13 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 30%;
   gap: 33px;
 
+  @media screen and (max-width: 900px) {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
   & .artistName {
     font-size: 20px;
+    bottom: -10%;
   }
 }
 
@@ -52,9 +66,19 @@
 .artists-header {
   font-size: 40px;
   font-weight: 900;
-  margin-top: 35px;
+  margin-top: 75px;
 }
 
-.artists-info-wrapper .icon-social:hover {
-  fill: white;
+.artists-info-wrapper {
+  padding: 0 10%;
+
+  & p {
+    font-weight: 700;
+    font-size: 12px;
+  }
+}
+
+.list-artist-description {
+  font-weight: 900;
+  font-size: 20px;
 }

@@ -4,7 +4,7 @@ export default function Header({ text, color = 'black' }) {
       <h1
         style={{
           color: { color },
-          fontSize: '80px',
+          fontSize: '7vw',
           textTransform: 'uppercase',
           fontWeight: '900',
         }}
