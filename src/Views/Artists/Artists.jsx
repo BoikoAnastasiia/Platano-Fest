@@ -1,7 +1,8 @@
-import React from 'react';
 import AppBar from '../../Сomponents/AppBar';
 import MainContainer from '../../Сomponents/MainContainer';
 import Header from '../../Сomponents/Header';
+import './Artists.scss';
+import majicool from './images/majicool.jpg';
 
 export default function Artists() {
   return (
@@ -9,10 +10,16 @@ export default function Artists() {
       <AppBar />
       <MainContainer>
         <Header text="хэдлайнеры" />
-        <ul className="">
+        <ul className="big-cards-wrapper">
           <li>
-            <div>
-              <img src="" alt="" />
+            <div className="card-wrapper">
+              <img
+                src={majicool}
+                alt="majicool"
+                width="292"
+                className="artist-photo"
+              />
+              <h3 className="artistName">меджикул</h3>
             </div>
           </li>
           <li>

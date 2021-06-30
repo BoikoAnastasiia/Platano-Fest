@@ -1,0 +1,27 @@
+.big-cards-wrapper {
+  display: flex;
+  margin-top: 45px;
+}
+
+.card-wrapper {
+  position: relative;
+}
+
+.artistName {
+  position: absolute;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 60px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: -13%;
+  text-transform: uppercase;
+  color: white;
+}
+
+.artist-photo {
+  transform: rotate(4deg);
+
+  &:hover {
+    transform: rotate(0deg);
+  }
+}
