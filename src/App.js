@@ -5,6 +5,7 @@ import Map from './Views/Map/';
 import Information from './Views/Information/';
 import Contacts from './Views/Contacts/';
 import BuyTickets from './Views/BuyTickets';
+import './App.scss';
 
 export default function App() {
   return (

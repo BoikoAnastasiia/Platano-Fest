@@ -1,6 +1,6 @@
 import MainContainer from '../../Сomponents/MainContainer';
 import { Link } from 'react-router-dom';
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 
 import './HomePage.scss';
 import Vk from '../../Icons/Vk';
