@@ -13,6 +13,8 @@ import ukachalo from './images/ukachalo.jpg';
 import asomnia from './images/asomnia.jpg';
 import misha from './images/misha.jpg';
 
+import Social from '../../Сomponents/Social';
+
 export default function Artists() {
   return (
     <div style={{ backgroundColor: '#ffc64f', height: '100vw' }}>
@@ -119,11 +121,12 @@ export default function Artists() {
               <h3 className="artistName">миша мищенко</h3>
             </div>
           </li>
-          <li>
+          <li className="artists-info-wrapper">
             <h4>Список приглашенных артистов постоянно обновляется</h4>
             <p>
               Подписывайся на нас в соцсетях, чтобы не попустить обвновления
             </p>
+            <Social fill="#000" />
           </li>
         </ul>
       </MainContainer>

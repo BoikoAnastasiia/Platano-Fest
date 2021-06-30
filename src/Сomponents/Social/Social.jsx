@@ -2,8 +2,9 @@ import React from 'react';
 import Vk from '../../Icons/Vk';
 import Ig from '../../Icons/Ig';
 import Tg from '../../Icons/Tg';
+import './Social.scss';
 
-export default function Social(fill = 'white') {
+export default function Social({ fill }) {
   return (
     <ul className="icons-wrapper">
       <li className="nav-item">
