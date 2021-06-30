@@ -1,0 +1,46 @@
+.NavLink {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  transition: 500ms;
+  font-size: 10px;
+}
+
+.NavLink--active {
+  color: #ffc64f;
+  text-decoration: underline;
+}
+
+.NavLink:hover {
+  color: #ffc64f;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 5px;
+  justify-content: space-between;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.NavButton {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  transition: 500ms;
+  background-color: #ffc64f;
+  width: 195px;
+  border-radius: 150px;
+  font-size: 10px;
+  padding: 10px 32px;
+}

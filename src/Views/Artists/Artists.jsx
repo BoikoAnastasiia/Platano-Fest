@@ -1,11 +1,12 @@
 import React from 'react';
 import AppBar from '../../Сomponents/AppBar';
+import MainContainer from '../../Сomponents/MainContainer';
 
 export default function Artists() {
   return (
     <div>
-      <h1>artists</h1>
       <AppBar />
+      <MainContainer></MainContainer>
     </div>
   );
 }
