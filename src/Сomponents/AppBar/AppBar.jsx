@@ -9,13 +9,12 @@ export default function AppBar() {
       <nav className="nav">
         <ul className="nav-list">
           <li>
-            <Link exact to="/">
+            <Link to="/">
               <SmallLogo />
             </Link>
           </li>
           <li>
             <NavLink
-              exact
               to="/artists"
               className="NavLink"
               activeClassName="NavLink--active"
@@ -25,7 +24,6 @@ export default function AppBar() {
           </li>
           <li>
             <NavLink
-              exact
               to="/information"
               className="NavLink"
               activeClassName="NavLink--active"
@@ -36,7 +34,6 @@ export default function AppBar() {
 
           <li>
             <NavLink
-              exact
               to="/map"
               className="NavLink"
               activeClassName="NavLink--active"
@@ -46,7 +43,6 @@ export default function AppBar() {
           </li>
           <li>
             <NavLink
-              exact
               to="/contacts"
               className="NavLink"
               activeClassName="NavLink--active"
@@ -56,7 +52,6 @@ export default function AppBar() {
           </li>
           <li>
             <NavLink
-              exact
               to="/buy-tickets"
               className="NavButton"
               activeClassName="NavButton--active"

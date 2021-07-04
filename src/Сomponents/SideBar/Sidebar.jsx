@@ -36,7 +36,6 @@ export default function Sidebar({ onClose }) {
           <ul className="nav-links">
             <li className="router-list">
               <NavLink
-                exact
                 to="/artists"
                 className="NavLink"
                 activeClassName="NavLink--active"
@@ -46,7 +45,6 @@ export default function Sidebar({ onClose }) {
             </li>
             <li className="router-list">
               <NavLink
-                exact
                 to="/information"
                 className="NavLink"
                 activeClassName="NavLink--active"
@@ -56,7 +54,6 @@ export default function Sidebar({ onClose }) {
             </li>
             <li className="router-list">
               <NavLink
-                exact
                 to="/buy-tickets"
                 className="NavLink"
                 activeClassName="NavLink--active"
@@ -66,7 +63,6 @@ export default function Sidebar({ onClose }) {
             </li>
             <li className="router-list">
               <NavLink
-                exact
                 to="/map"
                 className="NavLink"
                 activeClassName="NavLink--active"
@@ -76,7 +72,6 @@ export default function Sidebar({ onClose }) {
             </li>
             <li className="router-list">
               <NavLink
-                exact
                 to="/contacts"
                 className="NavLink"
                 activeClassName="NavLink--active"
