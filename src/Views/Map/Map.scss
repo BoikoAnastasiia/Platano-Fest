@@ -1,9 +1,31 @@
 .map-list-item {
-  font-size: 17px;
-  font-weight: 800;
-  margin-bottom: 25px;
+  display: grid;
+  grid-template-columns: 6% 40%;
+  width: 50vw;
+  gap: 15px;
+  align-items: center;
+
+  & p {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 25px;
+  }
 }
 
 .map-list {
   margin-top: 53px;
+}
+
+.number-wrapper {
+  background: center / contain no-repeat url('./images/1.png');
+
+  & p {
+    text-align: center;
+  }
+}
+
+.addendum {
+  font-weight: 700;
+  font-size: 13px;
+  display: block;
 }

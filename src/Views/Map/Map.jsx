@@ -20,26 +20,45 @@ export default function Map() {
       <MainContainer>
         <Header text="карта" />
         <ul className="map-list">
-          <li
-            className="map-list-item"
-            style={{
-              fontSize: '17px',
-              '&::before': {
-                content: `${number++}`,
-                color: 'black',
-                fontSize: '15px',
-              },
-            }}
-          >
-            Главная сцена Platano Fest
-          </li>
-          <li className="map-list-item">Фудкорт с кухней латинской Америки</li>
-          <li className="map-list-item">Площадка лейбла «Музыка у моря»</li>
-          <li className="map-list-item">Лаунж/Чилаут зона для отдыха</li>
           <li className="map-list-item">
-            Кемпинг <span>Билеты приобретаются отдельно</span>
+            <div className="number-wrapper">
+              <p>{++number}</p>
+            </div>
+            <p> Главная сцена Platano Fest</p>
           </li>
-          <li className="map-list-item">Парковка для гостей фестиваля</li>
+          <li className="map-list-item">
+            <div className="number-wrapper">
+              <p>{++number}</p>
+            </div>
+            <p> Фудкорт с кухней латинской Америки</p>
+          </li>
+          <li className="map-list-item">
+            <div className="number-wrapper">
+              <p>{++number}</p>
+            </div>{' '}
+            <p>Площадка лейбла «Музыка у моря»</p>
+          </li>
+          <li className="map-list-item">
+            <div className="number-wrapper">
+              <p>{++number}</p>
+            </div>
+            <p>Лаунж/Чилаут зона для отдыха</p>
+          </li>
+          <li className="map-list-item">
+            <div className="number-wrapper">
+              <p>{++number}</p>
+            </div>
+            <p>
+              Кемпинг{' '}
+              <span className="addendum">Билеты приобретаются отдельно</span>
+            </p>
+          </li>
+          <li className="map-list-item">
+            <div className="number-wrapper">
+              <p>{++number}</p>
+            </div>
+            <p>Парковка для гостей фестиваля</p>
+          </li>
         </ul>
       </MainContainer>
     </div>
