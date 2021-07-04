@@ -3,7 +3,7 @@ export default function Header({ text, color = 'black' }) {
     <div>
       <h1
         style={{
-          color: { color },
+          color: color,
           fontSize: '7vw',
           textTransform: 'uppercase',
           fontWeight: '900',
