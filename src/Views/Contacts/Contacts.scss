@@ -1,0 +1,41 @@
+.contacts-wrapper {
+  margin-top: 53px;
+}
+
+.contacts-link {
+  color: #c4c4c4;
+  display: block;
+  line-height: 2;
+  font-weight: 700;
+}
+
+.contacts-mini-header {
+  margin: 5px 0;
+}
+
+.mail {
+  margin-bottom: 35px;
+}
+
+.contacts-btn {
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+  transition: 500ms;
+  background-color: #1f1f1f;
+  width: 195px;
+  border-radius: 150px;
+  font-size: 10px;
+  padding: 10px 32px;
+  border: 1px solid white;
+  margin-right: 10px;
+
+  &:hover {
+    background-color: #fff;
+    color: #ffc64f;
+  }
+}
+
+.contacts-btn-wrapper {
+  margin: 20px 0;
+}
