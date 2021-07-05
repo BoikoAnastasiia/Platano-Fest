@@ -16,7 +16,7 @@ import Social from '../../Сomponents/Social';
 
 export default function Artists() {
   return (
-    <div style={{ backgroundColor: '#ffc64f' }}>
+    <div style={{ backgroundColor: '#ffc64f', height: '100vh' }}>
       <AppBar />
       <MainContainer>
         <Header text="хэдлайнеры" />

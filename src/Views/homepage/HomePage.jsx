@@ -39,7 +39,7 @@ export default function HomePage() {
           {showSidebar && <SideBar onClose={toggleModal} />}
 
           <div className="hero-wrapper">
-            <Logo />
+            <Logo fill="white" />
             <div className="music-wrapper">
               <MusicNearTheSea className="MusicNearTheSea" />
             </div>
