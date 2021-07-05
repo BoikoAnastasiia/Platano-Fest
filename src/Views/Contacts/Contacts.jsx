@@ -116,7 +116,7 @@ export default function Contacts() {
             className="map-contacts-wrapper"
             style={{ width: '100%', height: '100%' }}
           >
-            <GoogleMap marker="44.7058756055429, 37.600965468260654" />
+            <GoogleMap lat={44.7058756055429} lng={37.600965468260654} />
           </div>
         </div>
       </MainContainer>
