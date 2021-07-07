@@ -11,6 +11,12 @@
   flex-direction: column;
   justify-content: space-between;
   z-index: 50;
+  @media screen and (max-width: 666px) {
+    width: 40vw;
+  }
+  @media screen and (max-width: 513px) {
+    width: 60vw;
+  }
 }
 
 .menu-btn {

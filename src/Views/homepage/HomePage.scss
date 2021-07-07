@@ -34,6 +34,9 @@
   position: relative;
   margin: 170px auto 0 auto;
   width: 50%;
+  @media screen and (max-width: 400px) {
+    width: 90vw;
+  }
 }
 
 .music-wrapper {
@@ -44,6 +47,10 @@
   width: 136px;
   height: 136px;
   border-radius: 50%;
+  @media screen and (max-width: 400px) {
+    top: -150px;
+    left: 80px;
+  }
 }
 
 .MusicNearTheSea {
@@ -88,21 +95,32 @@
 
 .test {
   border: 1px solid rgb(255, 255, 255);
-  padding: 16px 50px;
+  padding: 16px 4%;
   text-transform: uppercase;
   text-align: center;
   margin: 130px auto 0 auto;
   border-radius: 10px;
-  width: 33%;
+  width: 19vw;
   color: #ffffff;
   font-weight: 800;
-  font-size: 1.3em;
+  font-size: 110%;
   transition: 700ms;
+  display: block;
+
   &:hover {
     background-color: #ffffff52;
+  }
+  @media screen and (max-width: 666px) {
+    width: 40vw;
+  }
+  @media screen and (max-width: 500px) {
+    width: 80vw;
   }
 }
 
 .main-logo {
   width: 40vw;
+  @media screen and (max-width: 400px) {
+    width: 90vw;
+  }
 }

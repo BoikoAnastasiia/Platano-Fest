@@ -48,9 +48,10 @@ export default function HomePage() {
               <p className="date-month">июля</p>
             </div>
           </div>
-          <div className="test">
-            <Link to="/buy-tickets">Купить билет</Link>
-          </div>
+
+          <Link to="/buy-tickets" className="test">
+            Купить билет
+          </Link>
         </main>
       </MainContainer>
     </div>
