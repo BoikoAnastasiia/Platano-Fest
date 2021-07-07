@@ -1,10 +1,10 @@
 import MainContainer from '../../Сomponents/MainContainer';
 import { Link } from 'react-router-dom';
 import React, { useState, useCallback } from 'react';
-
+import MainLogo from './images/main-logo.png';
 import './HomePage.scss';
 import Social from '../../Сomponents/Social';
-import Logo from '../../Icons/Logo';
+
 import MusicNearTheSea from '../../Icons/MusicNeartheSea';
 import SideBar from '../../Сomponents/SideBar';
 
@@ -39,7 +39,7 @@ export default function HomePage() {
           {showSidebar && <SideBar onClose={toggleModal} />}
 
           <div className="hero-wrapper">
-            <Logo fill="white" />
+            <img src={MainLogo} alt="logo" className="main-logo" />
             <div className="music-wrapper">
               <MusicNearTheSea className="MusicNearTheSea" />
             </div>

@@ -1,6 +1,9 @@
 .tickets-intro {
   font-weight: 700;
   width: 50%;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+  }
 }
 
 .tickets-list {
@@ -9,6 +12,9 @@
   gap: 33px;
   text-transform: uppercase;
   margin-top: 39px;
+  @media screen and (max-width: 500px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .tickets-list-item {
@@ -19,6 +25,10 @@
   grid-template-columns: 1fr 1fr;
   &:hover {
     transform: rotate(-2deg);
+  }
+
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -59,6 +69,9 @@
 
 .left-side-ticket {
   border-right: 2px dashed #c4c4c4;
+  @media screen and (max-width: 900px) {
+    border-right: 0;
+  }
 }
 
 .tickets-btn {

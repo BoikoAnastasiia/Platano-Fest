@@ -33,7 +33,7 @@
 .hero-wrapper {
   position: relative;
   margin: 170px auto 0 auto;
-  width: 500px;
+  width: 50%;
 }
 
 .music-wrapper {
@@ -48,6 +48,7 @@
 
 .MusicNearTheSea {
   position: absolute;
+  z-index: 1;
   left: 19px;
   top: 32px;
 }
@@ -92,7 +93,7 @@
   text-align: center;
   margin: 130px auto 0 auto;
   border-radius: 10px;
-  width: 305px;
+  width: 33%;
   color: #ffffff;
   font-weight: 800;
   font-size: 1.3em;
@@ -100,4 +101,8 @@
   &:hover {
     background-color: #ffffff52;
   }
+}
+
+.main-logo {
+  width: 40vw;
 }
