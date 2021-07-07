@@ -2,6 +2,10 @@
   margin-top: 53px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  @media screen and (max-width: 580px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
 }
 
 .contacts-link {
@@ -36,6 +40,11 @@
     background-color: #fff;
     color: #ffc64f;
   }
+  @media screen and (max-width: 800px) {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+  }
 }
 
 .contacts-btn-wrapper {
@@ -46,6 +55,9 @@
   display: grid;
   grid-template-columns: 30% 20%;
   margin-top: 91px;
+  @media screen and (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
 }
 
 .footer-left-wrapper .icons-wrapper {
@@ -53,6 +65,9 @@
 }
 
 .footer-copyright {
+  @media screen and (max-width: 900px) {
+    margin-bottom: 30px;
+  }
   text-transform: uppercase;
   color: #525252;
   font-size: 10px;

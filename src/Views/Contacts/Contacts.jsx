@@ -12,7 +12,6 @@ export default function Contacts() {
     <div
       style={{
         backgroundColor: '#1F1F1F',
-        // height: '100vh',
         backgroundSize: 'cover',
         color: 'white',
       }}
