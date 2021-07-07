@@ -1,5 +1,7 @@
 .contacts-wrapper {
   margin-top: 53px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .contacts-link {

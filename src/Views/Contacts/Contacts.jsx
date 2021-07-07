@@ -5,7 +5,7 @@ import Logo from './images/LOGO_contacts.svg';
 import Social from '../../Сomponents/Social';
 import { Link } from 'react-router-dom';
 import './Contacts.scss';
-import GoogleMap from '../../Сomponents/GoogleMap';
+import GoogleMapComp from '../../Сomponents/GoogleMap';
 
 export default function Contacts() {
   return (
@@ -105,7 +105,7 @@ export default function Contacts() {
                     </Link>
                   </li>
                 </ul>
-                <a href="" className="policy">
+                <a href="https://platanos.ru/#" className="policy">
                   Политика в отношении обработки персональных данных
                 </a>
               </div>
@@ -116,7 +116,7 @@ export default function Contacts() {
             className="map-contacts-wrapper"
             style={{ width: '100%', height: '100%' }}
           >
-            <GoogleMap lat={44.7058756055429} lng={37.600965468260654} />
+            <GoogleMapComp />
           </div>
         </div>
       </MainContainer>
