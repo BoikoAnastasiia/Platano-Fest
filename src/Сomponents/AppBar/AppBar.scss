@@ -4,6 +4,9 @@
   font-weight: 900;
   transition: 500ms;
   font-size: 10px;
+  &:hover {
+    color: #ffc64f;
+  }
 }
 
 .anchor {
@@ -15,10 +18,6 @@
 .NavLink--active {
   color: #ffc64f;
   text-decoration: underline;
-}
-
-.NavLink:hover {
-  color: #ffc64f;
 }
 
 .nav-list {
