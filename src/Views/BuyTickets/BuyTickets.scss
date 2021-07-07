@@ -17,6 +17,9 @@
   padding: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  &:hover {
+    transform: rotate(-2deg);
+  }
 }
 
 .ticket-date {
@@ -46,6 +49,8 @@
   font-size: 9px;
   color: rgba(196, 196, 196, 1);
   text-align: center;
+  bottom: 0;
+  left: 30%;
 }
 
 .right-side-ticket {
@@ -62,11 +67,11 @@
   font-weight: 900;
   transition: 500ms;
   background-color: #ffc64f;
-  width: 195px;
+  width: 80%;
   border-radius: 150px;
   font-size: 10px;
   padding: 10px 32px;
-  margin-bottom: 23px;
+  margin: 36px auto 23px auto;
   display: block;
 
   &:hover {
@@ -74,6 +79,14 @@
   }
 }
 
-.right-side-ticket {
-  padding: 27px 50px;
+.buy-text-passive,
+.buy-text-active {
+  font-weight: 800;
+  font-size: 13px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.buy-text-passive {
+  color: #c4c4c4;
 }

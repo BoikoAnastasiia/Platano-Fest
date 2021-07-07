@@ -13,6 +13,7 @@ export default function Map() {
         backgroundColor: '#FEF2D9',
         backgroundImage: `url(${map})`,
         height: '100vh',
+        weight: '100vw',
         backgroundSize: 'cover',
       }}
     >

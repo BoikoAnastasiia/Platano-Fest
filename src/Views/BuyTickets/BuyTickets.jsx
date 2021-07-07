@@ -9,6 +9,9 @@ export default function Contacts() {
     <div
       style={{
         backgroundColor: '#FFC64F',
+        backgroundSize: 'cover',
+        height: '100vh',
+        weight: '100vw',
       }}
     >
       <AppBar />
@@ -66,9 +69,11 @@ export default function Contacts() {
             </li>
             <li className="tickets-list-item">
               <div className="left-side-ticket">
-                <p className="ticket-date">2—3 ИЮНЯ / ДЮРСО</p>
+                <p className="ticket-date">2-3 ИЮНЯ / ДЮРСО</p>
                 <div className="middle-left-ticket-wrapper">
-                  <h2 className="ticket-header">базовый два&nbsp;дня</h2>
+                  <h2 className="ticket-header">
+                    базовый <br /> два&nbsp;дня
+                  </h2>
                   <p className="ticket-descr">
                     КЕМПИНГ / 3 МАСТЕР-КЛАССА / 1 КВЕСТ
                   </p>
@@ -78,17 +83,18 @@ export default function Contacts() {
                 </p>
               </div>
               <div className="right-side-ticket">
+                <div className="right-side-wrapper"></div>
                 <a href="https://platanos.ru/#tickets" className="tickets-btn ">
                   купить билеты
                 </a>
                 <p className="buy-text-active">ДО 30.05 — 2 000 ₽ ₽</p>
-                <p className="buy-text-passive">ДО ДО 15.06 — 2 500 ₽</p>
+                <p className="buy-text-passive">ДО 15.06 — 2 500 ₽</p>
                 <p className="buy-text-passive">ДО 2.07 — 3 000 ₽</p>
               </div>
             </li>
             <li className="tickets-list-item">
               <div className="left-side-ticket">
-                <p className="ticket-date">2—3 ИЮНЯ / ДЮРСО</p>
+                <p className="ticket-date">2-3 ИЮНЯ / ДЮРСО</p>
                 <div className="middle-left-ticket-wrapper">
                   <h2 className="ticket-header">базовый один&nbsp;день</h2>
                   <p className="ticket-descr">

@@ -11,6 +11,7 @@ export default function Information() {
         backgroundColor: '#ffc64f',
         backgroundImage: `url(${girl})`,
         height: '100vh',
+        weight: '100vw',
         backgroundSize: 'cover',
       }}
     >
