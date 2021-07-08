@@ -10,8 +10,8 @@ export default function Information() {
       style={{
         backgroundColor: '#ffc64f',
         backgroundImage: `url(${girl})`,
-        height: '100vh',
-        weight: '100vw',
+        height: '100%',
+        weight: '100%',
         backgroundSize: 'cover',
       }}
     >
