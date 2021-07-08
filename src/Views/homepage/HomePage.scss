@@ -37,6 +37,20 @@
   @media screen and (max-width: 400px) {
     width: 90vw;
   }
+  @media screen and (min-width: 1600px) {
+    width: 30vw;
+  }
+}
+
+.main-logo {
+  width: 40vw;
+  @media screen and (max-width: 400px) {
+    width: 90vw;
+  }
+  @media screen and (min-width: 1600px) {
+    width: 30vw;
+  }
+  margin: 0 auto;
 }
 
 .music-wrapper {
@@ -77,6 +91,9 @@
   color: #008c4c;
   text-transform: uppercase;
   transform: rotate(11deg);
+  @media screen and (max-width: 400px) {
+    display: none;
+  }
 }
 
 .date-number {
@@ -115,12 +132,5 @@
   }
   @media screen and (max-width: 500px) {
     width: 80vw;
-  }
-}
-
-.main-logo {
-  width: 40vw;
-  @media screen and (max-width: 400px) {
-    width: 90vw;
   }
 }
