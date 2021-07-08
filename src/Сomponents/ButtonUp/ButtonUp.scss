@@ -1,0 +1,29 @@
+.button-up {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  bottom: 3%;
+  right: 3%;
+  background: #ffc64f;
+  box-shadow: 3px 4px 11px rgba(0, 0, 0, 0.18);
+  border-radius: 50%;
+  color: white;
+  transition: 500ms;
+  text-align: center;
+  padding-top: 12px;
+  z-index: 80;
+
+  &:hover {
+    background: white;
+    color: yellowgreen;
+  }
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+}
+
+.arrow {
+  display: inline-block;
+  transform: rotate(-90deg);
+}

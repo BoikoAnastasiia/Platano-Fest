@@ -6,6 +6,7 @@ import Information from './Views/Information/';
 import Contacts from './Views/Contacts/';
 import BuyTickets from './Views/BuyTickets';
 import './App.scss';
+import ButtonUp from './Сomponents/ButtonUp';
 
 export default function App() {
   return (
@@ -14,8 +15,10 @@ export default function App() {
         backgroundColor: '#FEF2D9',
         height: '100%',
         weight: '100%',
+        // position: 'relative',
       }}
     >
+      <ButtonUp />
       <Switch>
         <Route path="/" exact component={HomePage} />
 
