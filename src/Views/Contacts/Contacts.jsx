@@ -14,8 +14,8 @@ export default function Contacts() {
         backgroundColor: '#1F1F1F',
         backgroundSize: 'cover',
         color: 'white',
-        height: '100vh',
-        weight: '100vw',
+        height: '100%',
+        weight: '100%',
       }}
     >
       <AppBar />

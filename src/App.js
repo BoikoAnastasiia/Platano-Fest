@@ -9,7 +9,13 @@ import './App.scss';
 
 export default function App() {
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: '#FEF2D9',
+        height: '100%',
+        weight: '100%',
+      }}
+    >
       <Switch>
         <Route path="/" exact component={HomePage} />
 

@@ -9,9 +9,6 @@ export default function Contacts() {
     <div
       style={{
         backgroundColor: '#FFC64F',
-        backgroundSize: 'cover',
-        height: '100vh',
-        weight: '100vw',
       }}
     >
       <AppBar />
