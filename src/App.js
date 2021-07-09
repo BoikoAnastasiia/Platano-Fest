@@ -15,7 +15,7 @@ export default function App() {
         position: 'absolute',
         backgroundColor: '#FEF2D9',
         height: '100vh',
-        weight: '100vw',
+        width: '100vw',
         // position: 'relative',
       }}
     >

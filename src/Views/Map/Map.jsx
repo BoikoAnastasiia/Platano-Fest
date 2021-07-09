@@ -10,10 +10,11 @@ export default function Map() {
   return (
     <div
       style={{
+        zIndex: 20,
         backgroundColor: '#FEF2D9',
         backgroundImage: `url(${map})`,
-        height: '100%',
-        weight: '100%',
+        height: '100vh',
+        width: '100%',
         backgroundSize: 'cover',
       }}
     >
