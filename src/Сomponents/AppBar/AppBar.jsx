@@ -16,7 +16,7 @@ export default function AppBar() {
           <li>
             <NavLink
               to="/artists"
-              className="NavLink"
+              className="NavLinkBar"
               activeClassName="NavLink--active"
             >
               артисты
@@ -25,7 +25,7 @@ export default function AppBar() {
           <li>
             <NavLink
               to="/information"
-              className="NavLink"
+              className="NavLinkBar"
               activeClassName="NavLink--active"
             >
               информация
@@ -35,7 +35,7 @@ export default function AppBar() {
           <li>
             <NavLink
               to="/map"
-              className="NavLink"
+              className="NavLinkBar"
               activeClassName="NavLink--active"
             >
               карта
@@ -44,7 +44,7 @@ export default function AppBar() {
           <li>
             <NavLink
               to="/contacts"
-              className="NavLink"
+              className="NavLinkBar"
               activeClassName="NavLink--active"
             >
               контакты

@@ -12,9 +12,10 @@ export default function App() {
   return (
     <div
       style={{
+        position: 'absolute',
         backgroundColor: '#FEF2D9',
-        height: '100%',
-        weight: '100%',
+        height: '100vh',
+        weight: '100vw',
         // position: 'relative',
       }}
     >

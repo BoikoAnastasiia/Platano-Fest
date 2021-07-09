@@ -8,11 +8,15 @@ export default function Information() {
   return (
     <div
       style={{
+        position: 'fixed',
+        top: 0,
+        left: 0,
         backgroundColor: '#ffc64f',
         backgroundImage: `url(${girl})`,
-        height: '100%',
-        weight: '100%',
+        height: '100vh',
+        weight: '100vw',
         backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
       }}
     >
       <AppBar />
