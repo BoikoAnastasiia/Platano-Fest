@@ -61,11 +61,17 @@ export default function App() {
       <Suspense
         fallback={
           <Loader
-            type="Puff"
-            color="#FFF"
+            type="ThreeDots"
+            color="#c4c4c4"
             height={100}
+            secondaryColor="#fff"
             width={100}
             timeout={3000} //3 secs
+            style={{
+              position: 'relative',
+              top: '40px',
+              left: '40px',
+            }}
           />
         }
       >
