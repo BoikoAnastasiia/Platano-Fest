@@ -4,11 +4,13 @@ import MainContainer from '../../Сomponents/MainContainer';
 import Header from '../../Сomponents/Header';
 import './BuyTickets.scss';
 
-export default function Contacts() {
+export default function BuyTickets() {
   return (
     <div
       style={{
         backgroundColor: '#FFC64F',
+        // minHeight: '1400px',
+        paddingBottom: 'auto',
       }}
     >
       <AppBar />

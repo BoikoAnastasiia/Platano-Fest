@@ -11,13 +11,15 @@ import ButtonUp from './Сomponents/ButtonUp';
 export default function App() {
   return (
     <div
-      style={{
-        position: 'absolute',
-        backgroundColor: '#FEF2D9',
-        height: '100vh',
-        width: '100vw',
-        // position: 'relative',
-      }}
+      style={
+        {
+          // position: 'absolute',
+          // backgroundColor: '#FEF2D9',
+          // height: '100%',
+          // width: '100vw',
+          // position: 'relative',
+        }
+      }
     >
       <ButtonUp />
       <Switch>
