@@ -14,8 +14,17 @@ export default function HomePage() {
     setShowSideBar(prevShowSideBar => !prevShowSideBar);
   }, []);
 
+  const handleBackdropClick = event => {
+    if (showSidebar && event.target.id !== 'sidebarWrapper') {
+      setShowSideBar(false);
+    }
+    console.dir(event.target);
+
+    return;
+  };
+
   return (
-    <div className="homepage-wraper">
+    <div className="homepage-wraper" onClick={handleBackdropClick}>
       <MainContainer>
         <nav>
           <div className="nav-wrapper">
