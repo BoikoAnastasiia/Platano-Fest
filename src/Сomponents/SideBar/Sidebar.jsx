@@ -27,7 +27,6 @@ export default function Sidebar({ onClose }) {
   };
 
   return (
-    // <div className="Modal__backdrop" onClick={handleBackdropClick}>
     <div id="sidebarWrapper">
       <div className="upper-wrap">
         <Close className="close-btn" onClick={onClose} />
