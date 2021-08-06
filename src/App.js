@@ -1,14 +1,28 @@
 import { Switch, Route, Redirect } from 'react-router-dom';
-import Artists from './Views/Artists/';
-import HomePage from './Views/HomePage';
-import Map from './Views/Map/';
-import Information from './Views/Information/';
-import Contacts from './Views/Contacts/';
-import BuyTickets from './Views/BuyTickets';
 import './App.scss';
 import ButtonUp from './Сomponents/ButtonUp';
 import { useState, useCallback } from 'react';
 import SideBar from './Сomponents/SideBar';
+import { Suspense, lazy } from 'react';
+import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css';
+import Loader from 'react-loader-spinner';
+
+const HomePage = lazy(() =>
+  import('./Views/HomePage' /* webpackChunkName: "home-page" */),
+);
+const Artists = lazy(() =>
+  import('./Views/Artists/' /* webpackChunkName: "artists" */),
+);
+const Map = lazy(() => import('./Views/Map/' /* webpackChunkName: "map" */));
+const Information = lazy(() =>
+  import('./Views/Information/' /* webpackChunkName: "information" */),
+);
+const Contacts = lazy(() =>
+  import('./Views/Contacts/' /* webpackChunkName: "information" */),
+);
+const BuyTickets = lazy(() =>
+  import('./Views/BuyTickets/' /* webpackChunkName: "buyTickets" */),
+);
 
 export default function App() {
   const handleBackdropClick = event => {
@@ -24,7 +38,7 @@ export default function App() {
     setShowSideBar(prevShowSideBar => !prevShowSideBar);
   }, []);
   const home = window.location.pathname === '/';
-  console.log(window.location.pathname);
+
   return (
     <div onClick={handleBackdropClick}>
       {!showSidebar && !home && (
@@ -44,21 +58,33 @@ export default function App() {
       {showSidebar && <SideBar onClose={toggleModal} />}
 
       <ButtonUp />
-      <Switch>
-        <Route path="/" exact component={HomePage} />
+      <Suspense
+        fallback={
+          <Loader
+            type="Puff"
+            color="#FFF"
+            height={100}
+            width={100}
+            timeout={3000} //3 secs
+          />
+        }
+      >
+        <Switch>
+          <Route path="/" exact component={HomePage} />
 
-        <Route path="/artists" component={Artists} />
+          <Route path="/artists" component={Artists} />
 
-        <Route path="/information" component={Information} />
+          <Route path="/information" component={Information} />
 
-        <Route path="/buy-tickets" component={BuyTickets} />
+          <Route path="/buy-tickets" component={BuyTickets} />
 
-        <Route path="/map" component={Map} />
+          <Route path="/map" component={Map} />
 
-        <Route path="/contacts" component={Contacts} />
+          <Route path="/contacts" component={Contacts} />
 
-        <Redirect to="/" />
-      </Switch>
+          <Redirect to="/" />
+        </Switch>
+      </Suspense>
     </div>
   );
 }
