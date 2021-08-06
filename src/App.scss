@@ -1,1 +1,11 @@
-$orange: #ffc64f;
+.mobile-toggler {
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 5%;
+    fill: currentColor;
+  }
+}

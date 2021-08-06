@@ -1,6 +1,6 @@
 import MainContainer from '../../Сomponents/MainContainer';
 import { Link } from 'react-router-dom';
-import React, { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import MainLogo from './images/main-logo.png';
 import './HomePage.scss';
 import Social from '../../Сomponents/Social';
@@ -14,17 +14,8 @@ export default function HomePage() {
     setShowSideBar(prevShowSideBar => !prevShowSideBar);
   }, []);
 
-  const handleBackdropClick = event => {
-    if (showSidebar && event.target.id !== 'sidebarWrapper') {
-      setShowSideBar(false);
-    }
-    console.dir(event.target);
-
-    return;
-  };
-
   return (
-    <div className="homepage-wraper" onClick={handleBackdropClick}>
+    <div id="homepage-wraper">
       <MainContainer>
         <nav>
           <div className="nav-wrapper">

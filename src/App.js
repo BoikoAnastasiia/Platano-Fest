@@ -7,20 +7,39 @@ import Contacts from './Views/Contacts/';
 import BuyTickets from './Views/BuyTickets';
 import './App.scss';
 import ButtonUp from './Сomponents/ButtonUp';
+import { useState, useCallback } from 'react';
+import SideBar from './Сomponents/SideBar';
 
 export default function App() {
+  const handleBackdropClick = event => {
+    if (showSidebar && event.target.id !== 'sidebarWrapper') {
+      setShowSideBar(false);
+    }
+    return;
+  };
+  const [showSidebar, setShowSideBar] = useState(false);
+  const toggleModal = useCallback(() => {
+    setShowSideBar(prevShowSideBar => !prevShowSideBar);
+  }, []);
+
   return (
-    <div
-      style={
-        {
-          // position: 'absolute',
-          // backgroundColor: '#FEF2D9',
-          // height: '100%',
-          // width: '100vw',
-          // position: 'relative',
-        }
-      }
-    >
+    <div onClick={handleBackdropClick}>
+      {!showSidebar && (
+        <svg
+          onClick={toggleModal}
+          viewBox="0 0 100 80"
+          width="17"
+          height="25"
+          className="icon-social menu-btn mobile-toggler"
+        >
+          <rect width="100" height="20"></rect>
+          <rect y="30" width="100" height="20"></rect>
+          <rect y="60" width="100" height="20"></rect>
+        </svg>
+      )}
+
+      {showSidebar && <SideBar onClose={toggleModal} />}
+
       <ButtonUp />
       <Switch>
         <Route path="/" exact component={HomePage} />
