@@ -9,7 +9,6 @@ export default function BuyTickets() {
     <div
       style={{
         backgroundColor: '#FFC64F',
-        // minHeight: '1400px',
         paddingBottom: 'auto',
       }}
     >
