@@ -18,7 +18,7 @@ const Information = lazy(() =>
   import('./Views/Information/' /* webpackChunkName: "information" */),
 );
 const Contacts = lazy(() =>
-  import('./Views/Contacts/' /* webpackChunkName: "information" */),
+  import('./Views/Contacts/' /* webpackChunkName: "contacts" */),
 );
 const BuyTickets = lazy(() =>
   import('./Views/BuyTickets/' /* webpackChunkName: "buyTickets" */),
