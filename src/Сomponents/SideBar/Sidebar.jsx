@@ -20,18 +20,13 @@ export default function Sidebar({ onClose }) {
     };
   }, [onClose]);
 
-  const handleBackdropClick = event => {
-    if (event.currentTarget !== event.target) {
-      onClose();
-    }
-  };
-
   return (
     <div id="sidebarWrapper">
       <div className="upper-wrap">
         <Close className="close-btn" onClick={onClose} />
-
-        <Logo className="logo-sidebar" />
+        <NavLink to="/">
+          <Logo className="logo-sidebar" />
+        </NavLink>
         <ul className="nav-links">
           <li className="router-list">
             <NavLink

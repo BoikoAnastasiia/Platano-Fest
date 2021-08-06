@@ -15,16 +15,19 @@ export default function App() {
     if (showSidebar && event.target.id !== 'sidebarWrapper') {
       setShowSideBar(false);
     }
+
     return;
   };
+
   const [showSidebar, setShowSideBar] = useState(false);
   const toggleModal = useCallback(() => {
     setShowSideBar(prevShowSideBar => !prevShowSideBar);
   }, []);
-
+  const home = window.location.pathname === '/';
+  console.log(window.location.pathname);
   return (
     <div onClick={handleBackdropClick}>
-      {!showSidebar && (
+      {!showSidebar && !home && (
         <svg
           onClick={toggleModal}
           viewBox="0 0 100 80"
